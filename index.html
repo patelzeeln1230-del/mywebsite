@@ -3,188 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Resume - [Your Name]</title>
+    <title>Zeel Patel - Resume</title>
     <style>
-        /* --- Base Styles for Print Readability --- */
+        /* --- Basic Styles --- */
         body {
-            font-family: 'Times New Roman', serif;
-            line-height: 1.4;
-            max-width: 8.5in; /* Standard paper width for printing */
-            margin: 0.5in auto; /* Standard margins */
-            padding: 0;
-            color: #222;
-        }
-
-        /* --- Header & Contact --- */
-        header {
-            text-align: center;
-            margin-bottom: 15px;
-        }
-
-        header h1 {
-            font-size: 2em;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
             margin: 0;
-            text-transform: uppercase;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* --- Header & Contact Info --- */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            color: #2c3e50;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #555;
         }
 
         .contact-info {
-            font-size: 0.9em;
-            margin: 5px 0 0 0;
-        }
-
-        .contact-info a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 8px;
-            padding: 0 8px;
-            border-right: 1px solid #999;
-        }
-
-        .contact-info a:last-child {
-            border-right: none;
-        }
-
-        /* --- Section Headings --- */
-        section h2 {
-            font-size: 1.2em;
-            text-transform: uppercase;
-            border-bottom: 2px solid #000;
-            padding-bottom: 3px;
-            margin: 25px 0 10px 0;
-        }
-
-        /* --- Experience/Education Entries --- */
-        .entry {
-            margin-bottom: 15px;
-        }
-
-        .title-line {
+            margin-top: 15px;
             display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            margin-bottom: 2px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px; /* Adds space between items */
         }
 
-        .title-line .job-title {
-            font-size: 1.1em;
+        .contact-info a, .contact-info span {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 1em;
+            transition: color 0.3s;
         }
         
-        .title-line .dates {
+        .contact-info span {
+             color: #555; /* Color for non-link text */
+        }
+
+        .contact-info a:hover {
+            color: #2980b9;
+        }
+        
+        /* --- Section Styling --- */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .section p {
+            color: #555;
+        }
+
+        /* --- Education & Projects --- */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item h3 {
+            margin: 0;
+            font-size: 1.3em;
+            color: #333;
+        }
+        
+        .item .date {
+            float: right;
+            color: #888;
             font-style: italic;
         }
 
-        .company-line {
-            font-style: italic;
-            margin-bottom: 5px;
+        .item p {
+            margin: 5px 0;
+            color: #777;
+            font-weight: bold;
         }
-
-        /* --- Bullet Points --- */
-        ul {
+        
+        .item ul {
+            padding-left: 20px;
+            margin-top: 10px;
             list-style-type: disc;
-            margin: 0 0 0 20px;
-            padding: 0;
-            font-size: 0.95em;
+        }
+        
+        .item ul li {
+            margin-bottom: 8px;
         }
 
-        li {
-            margin-bottom: 4px;
-        }
 
-        /* --- Skills Section --- */
+        /* --- Skills --- */
         .skills-list {
-            line-height: 1.8;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: #e0eaf1;
+            color: #34495e;
+            padding: 8px 15px;
+            border-radius: 5px;
             font-size: 0.95em;
         }
 
-        .skills-list strong {
-            display: inline-block;
-            min-width: 120px;
-            color: #444;
+        /* --- Responsive Design --- */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 2.2em;
+            }
+            .item .date {
+                float: none;
+                display: block;
+                margin-top: 5px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>[YOUR FULL NAME]</h1>
-        <p class="contact-info">
-            [123] 456-7890 
-            <a href="mailto:your.email@example.com">your.email@example.com</a> 
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a> 
-            <a href="[Your City, State]">City, State</a>
-        </p>
-    </header>
-
-    <main>
-        
-        <section id="summary">
-            <h2>Professional Profile</h2>
-            <p>A highly accomplished and strategic **Financial Analyst** with over 7 years of experience in market analysis, budgeting, and financial modeling for Fortune 500 companies. Proven success in identifying cost-saving opportunities and driving profitability. Seeking to leverage advanced analytical skills in a dynamic leadership role.</p>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            
-            <article class="entry">
-                <div class="title-line">
-                    <span class="job-title">Senior Financial Analyst</span>
-                    <span class="dates">2021 – Present</span>
-                </div>
-                <div class="company-line">Acme Global Corporation | Chicago, IL</div>
-                <ul>
-                    <li>Led quarterly forecasting and annual budgeting processes for a $500M business unit, achieving 98% accuracy.</li>
-                    <li>Developed complex financial models that identified $2.5M in annual operational efficiencies.</li>
-                    <li>Presented performance reviews and strategic recommendations directly to the executive leadership team.</li>
-                </ul>
-            </article>
-            
-            <article class="entry">
-                <div class="title-line">
-                    <span class="job-title">Junior Analyst</span>
-                    <span class="dates">2018 – 2021</span>
-                </div>
-                <div class="company-line">Midwest Finance Group | Indianapolis, IN</div>
-                <ul>
-                    <li>Supported due diligence for M&A transactions totaling over $100M.</li>
-                    <li>Managed daily reconciliation and reporting for 15 major client accounts.</li>
-                </ul>
-            </article>
-
-        </section>
-
-        <section id="skills">
-            <h2>Key Skills & Expertise</h2>
-            <div class="skills-list">
-                <p>
-                    <strong>Financial Modeling:</strong> Forecasting, Budgeting, Valuation, DCF Analysis<br>
-                    <strong>Software/Tools:</strong> Microsoft Excel (Expert), SAP, Tableau, SQL, Bloomberg Terminal<br>
-                    <strong>Core Competencies:</strong> Strategic Planning, Risk Management, Data Analysis, Compliance
-                </p>
+    <div class="container">
+        <header class="header">
+            <h1>Zeel Patel</h1>
+            <p>Information Technology Student | Aspiring Developer</p>
+            <div class="contact-info">
+                <span>Kapadwanj, Kheda, Gujarat</span> &bull;
+                <a href="tel:+919876543210">+91 98765 43210</a> &bull;
+                <a href="mailto:zeel.patel@example.com">zeel.patel@example.com</a> &bull;
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a>
             </div>
-        </section>
+        </header>
 
-        <section id="education">
-            <h2>Education</h2>
-            
-            <article class="entry">
-                <div class="title-line">
-                    <span class="job-title">Master of Business Administration (MBA)</span>
-                    <span class="dates">Graduated May 2018</span>
+        <main>
+            <section class="section">
+                <h2>Objective</h2>
+                <p>
+                    A motivated and enthusiastic first-year Information Technology student with a solid foundation in C and Java programming. Eager to apply my problem-solving skills and passion for technology to gain practical experience through internships, workshops, and projects. Seeking opportunities to learn new technologies and contribute to a challenging and dynamic environment.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Education</h2>
+                <div class="item">
+                    <span class="date">2025 &ndash; 2029</span>
+                    <h3>Bachelor of Technology in Information Technology</h3>
+                    <p>Dharmsinh Desai University (DDU), Nadiad</p>
                 </div>
-                <div class="company-line">University of Michigan | Ann Arbor, MI</div>
-            </article>
-            
-            <article class="entry">
-                <div class="title-line">
-                    <span class="job-title">B.S. in Economics</span>
-                    <span class="dates">Graduated May 2016</span>
+                </section>
+
+            <section class="section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>C Programming</li>
+                    <li>Java (Core)</li>
+                    <li>Object-Oriented Programming (OOP) Concepts</li>
+                    <li>Data Structures (Fundamental)</li>
+                    <li>Problem Solving</li>
+                    </ul>
+            </section>
+
+            <section class="section">
+                <h2>Academic Projects</h2>
+                <div class="item">
+                    <h3>[Project Name - e.g., Library Management System]</h3>
+                    <p>Coursework Project</p>
+                    <ul>
+                        <li>Developed a simple console-based application using C to manage book records.</li>
+                        <li>Implemented core concepts like file handling and data structures to store and retrieve data.</li>
+                        <li>(Add another point about what you did or learned)</li>
+                    </ul>
                 </div>
-                <div class="company-line">Purdue University | West Lafayette, IN</div>
-            </article>
+                </section>
 
-        </section>
+            <section class="section">
+                <h2>Extracurricular Activities & Achievements</h2>
+                 <ul>
+                    <li>(Example: Participated in a university-level coding competition.)</li>
+                    <li>(Example: Member of the university's tech club.)</li>
+                    <li>(Add any other relevant activities or achievements here.)</li>
+                </ul>
+            </section>
 
-    </main>
-    
+        </main>
+    </div>
+
 </body>
 </html>
