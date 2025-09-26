@@ -3,11 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple HTML Page</title>
+    <title>Professional Resume - [Your Name]</title>
+    <style>
+        /* --- Base Styles for Print Readability --- */
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.4;
+            max-width: 8.5in; /* Standard paper width for printing */
+            margin: 0.5in auto; /* Standard margins */
+            padding: 0;
+            color: #222;
+        }
+
+        /* --- Header & Contact --- */
+        header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            margin: 5px 0 0 0;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 8px;
+            padding: 0 8px;
+            border-right: 1px solid #999;
+        }
+
+        .contact-info a:last-child {
+            border-right: none;
+        }
+
+        /* --- Section Headings --- */
+        section h2 {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000;
+            padding-bottom: 3px;
+            margin: 25px 0 10px 0;
+        }
+
+        /* --- Experience/Education Entries --- */
+        .entry {
+            margin-bottom: 15px;
+        }
+
+        .title-line {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .title-line .job-title {
+            font-size: 1.1em;
+        }
+        
+        .title-line .dates {
+            font-style: italic;
+        }
+
+        .company-line {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        /* --- Bullet Points --- */
+        ul {
+            list-style-type: disc;
+            margin: 0 0 0 20px;
+            padding: 0;
+            font-size: 0.95em;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        /* --- Skills Section --- */
+        .skills-list {
+            line-height: 1.8;
+            font-size: 0.95em;
+        }
+
+        .skills-list strong {
+            display: inline-block;
+            min-width: 120px;
+            color: #444;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Page</h1>
-    <p>This is a simple paragraph of text.</p>
-    <p>You can add more content here, like images or links.</p>
+
+    <header>
+        <h1>[YOUR FULL NAME]</h1>
+        <p class="contact-info">
+            [123] 456-7890 
+            <a href="mailto:your.email@example.com">your.email@example.com</a> 
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a> 
+            <a href="[Your City, State]">City, State</a>
+        </p>
+    </header>
+
+    <main>
+        
+        <section id="summary">
+            <h2>Professional Profile</h2>
+            <p>A highly accomplished and strategic **Financial Analyst** with over 7 years of experience in market analysis, budgeting, and financial modeling for Fortune 500 companies. Proven success in identifying cost-saving opportunities and driving profitability. Seeking to leverage advanced analytical skills in a dynamic leadership role.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <article class="entry">
+                <div class="title-line">
+                    <span class="job-title">Senior Financial Analyst</span>
+                    <span class="dates">2021 – Present</span>
+                </div>
+                <div class="company-line">Acme Global Corporation | Chicago, IL</div>
+                <ul>
+                    <li>Led quarterly forecasting and annual budgeting processes for a $500M business unit, achieving 98% accuracy.</li>
+                    <li>Developed complex financial models that identified $2.5M in annual operational efficiencies.</li>
+                    <li>Presented performance reviews and strategic recommendations directly to the executive leadership team.</li>
+                </ul>
+            </article>
+            
+            <article class="entry">
+                <div class="title-line">
+                    <span class="job-title">Junior Analyst</span>
+                    <span class="dates">2018 – 2021</span>
+                </div>
+                <div class="company-line">Midwest Finance Group | Indianapolis, IN</div>
+                <ul>
+                    <li>Supported due diligence for M&A transactions totaling over $100M.</li>
+                    <li>Managed daily reconciliation and reporting for 15 major client accounts.</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section id="skills">
+            <h2>Key Skills & Expertise</h2>
+            <div class="skills-list">
+                <p>
+                    <strong>Financial Modeling:</strong> Forecasting, Budgeting, Valuation, DCF Analysis<br>
+                    <strong>Software/Tools:</strong> Microsoft Excel (Expert), SAP, Tableau, SQL, Bloomberg Terminal<br>
+                    <strong>Core Competencies:</strong> Strategic Planning, Risk Management, Data Analysis, Compliance
+                </p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            
+            <article class="entry">
+                <div class="title-line">
+                    <span class="job-title">Master of Business Administration (MBA)</span>
+                    <span class="dates">Graduated May 2018</span>
+                </div>
+                <div class="company-line">University of Michigan | Ann Arbor, MI</div>
+            </article>
+            
+            <article class="entry">
+                <div class="title-line">
+                    <span class="job-title">B.S. in Economics</span>
+                    <span class="dates">Graduated May 2016</span>
+                </div>
+                <div class="company-line">Purdue University | West Lafayette, IN</div>
+            </article>
+
+        </section>
+
+    </main>
+    
 </body>
 </html>
